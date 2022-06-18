@@ -90,12 +90,10 @@ main {
 }
 
 section {
-   background-color: #7510F7 ; 
-   display: flex;
-   height: 500px;
-  align-items: center;
-/* justify-content: center; */
-    /* margin-top: 5em; */
+    background-color: #7510F7 ; 
+    display: flex;
+    height: 500px;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -105,7 +103,6 @@ section {
 }
 
 h2 {
-   /* padding-top: 2em; */
     color: white;
     font-family: 'Eurostile Extended', sans-serif;
     font-size: 1.3em;
@@ -122,9 +119,6 @@ section p {
     font-family: 'Roboto', sans-serif;
 }
 
-/* section {
-    position: relative;
-} */
 
 .card-info {
     display: grid;
@@ -164,6 +158,12 @@ section p {
     width: 310px;
     font-weight: 100;
     color: black;
+    display: inline-block;
+    text-align: center;
+}
+
+.p-personal {
+    margin-top: 2em;
 }
 
 .card-info-1 h2 {
@@ -179,7 +179,7 @@ section p {
     margin-top: 1.875em;
     display: inline-block;
     text-align: center;
-    font-weight: 300px;
+    font-weight: 300;
 }
 
 .card-info-1  ul {
@@ -210,7 +210,7 @@ section p {
 
 .recent-work-container__p {
     margin-top: 1.5em;
-    font-weight: 200px;
+    font-weight: 300;
 }
 
 .project-grid {
@@ -222,9 +222,6 @@ section p {
 }
 
 .project-grid__1, .project-grid__2, .project-grid__3 {
-    /* height: 200px;
-    width: 300px;
-    border-radius: 12px; */
     position: relative;
 }
 
@@ -252,9 +249,7 @@ section p {
     border-radius: 12px;
 }
 
-/* .project-1-overlay--primary {
-    background-blur: forestgreen;
-} */
+
 
 .project-1-overlay:hover, .project-2-overlay:hover, .project-3-overlay:hover{
     opacity: 1;
@@ -310,6 +305,65 @@ section p {
     border-radius: 12px;
     cursor: pointer;
 }
+
+.footer {
+    margin-top: 3.5em;
+    height: 400px;
+    width: 100%;
+    background-color: #7510F7;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer__img {
+    width: 50px;
+    height: 50px;
+}
+
+.footer__description {
+    width: 400px;
+    color: white;
+    margin-top: 2em;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.icons-container {
+    margin-top: 2.5em;
+    display: flex;
+    gap: 20px;
+}
+
+.icon-email, .icon-linkedin, .icon-github{
+    font-size: 1.18rem;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.fa-envelope, .fa-linkedin-in, .fa-github {
+    padding: 10px;
+}
+
+
+.icon-email:hover, .icon-linkedin:hover, .icon-github:hover {
+    color: #7510F7;
+    background-color: white;
+}
+
+.footer-doneby {
+    margin-top: 2em;
+    font-weight: 100;
+    color: white;
+}
+
+
 
 
 
