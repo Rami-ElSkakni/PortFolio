@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   border-style: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 nav {
   margin-top: 0.7em;
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
   height: 10vh;
 }
@@ -59,7 +59,6 @@ h1 {
   font-weight: 700;
   text-align: center;
   margin: 2em auto 0;
-  /* width: 670px; */
   width: 720px;
   display: inline-block;
   font-size: 2.4em;
@@ -75,7 +74,7 @@ main {
   font-weight: 200;
   margin-top: 1.25em;
   font-size: 1.15em;
-} 
+}
 
 .img-avatar {
   margin-top: 2em;
@@ -88,8 +87,8 @@ main {
   margin-top: 3.7em;
 }
 
-section {
-  background-color: #7510F7 ; 
+.personal-info-container {
+  background-color: #7510f7;
   display: flex;
   height: 500px;
   align-items: center;
@@ -103,11 +102,11 @@ section {
 
 h2 {
   color: white;
-  font-family: 'Eurostile Extended', sans-serif;
+  font-family: "Eurostile Extended", sans-serif;
   font-size: 1.3em;
 }
 
-section p {
+.personal-info-container p {
   padding-top: 1.5em;
   color: white;
   width: 620px;
@@ -115,24 +114,21 @@ section p {
   display: inline-block;
   line-height: 1.7em;
   font-weight: 100;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-
 
 .card-info {
   display: grid;
   grid-template-columns: repeat(1, 400px);
   justify-content: center;
-  /* position: absolute;
-  top: 380px; */
   margin-top: -8em;
 }
 
-.card-info-1 {
+.card-info-skills {
   background-color: white;
   width: 400px;
   height: 600px;
-  border: 1px solid #E6ECF8;
+  border: 1px solid #e6ecf8;
   border-radius: 24px;
   display: flex;
   flex-direction: column;
@@ -140,20 +136,22 @@ section p {
   text-align: c;
 }
 
-.card-info-1 img {
+.card-info-skills img {
   height: 50px;
   width: 48px;
   padding-top: 3.125em;
 }
 
-.card-info-1 h1 {
+.card-info-skills h2 {
   text-align: center;
   display: inline-block;
   width: 250px;
   font-size: 1.5em;
+  color: black;
+  margin-top: 2rem;
 }
 
-.card-info-1 .p-personal {
+.card-info-skills .p-personal {
   width: 310px;
   font-weight: 100;
   color: black;
@@ -165,14 +163,16 @@ section p {
   margin-top: 2em;
 }
 
-.card-info-1 h2 {
-  color: #7510F7;
+.card-info-skills h3,
+.card-info-skills h4 {
+  color: #7510f7;
   font-weight: 200;
   margin-top: 1.875em;
   text-align: center;
+  font-size: 1.3125rem;
 }
 
-.card-info-1 .p-skills {
+.card-info-skills .p-skills {
   width: 310px;
   color: black;
   margin-top: 1.875em;
@@ -181,12 +181,12 @@ section p {
   font-weight: 300;
 }
 
-.card-info-1  ul {
+.card-info-skills ul {
   margin-top: 1.5em;
   text-align: center;
 }
 
-.card-info-1  li {
+.card-info-skills li {
   list-style: none;
   font-weight: 200;
   margin-bottom: 0.5em;
@@ -198,7 +198,6 @@ section p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .recent-work-container__h2 {
@@ -220,18 +219,18 @@ section p {
   margin-top: 4em;
 }
 
-.project-grid__1, .project-grid__2, .project-grid__3 {
+.project-grid__item {
   position: relative;
 }
 
-
-.project-img-1 {
+.project-grid__img {
   height: 200px;
   width: 300px;
   border-radius: 12px;
+  cursor: pointer;
 }
 
-.project-1-overlay, .project-2-overlay, .project-3-overlay {
+.project-overlay {
   color: white;
   position: absolute;
   top: 0;
@@ -248,68 +247,42 @@ section p {
   border-radius: 12px;
 }
 
-
-
-.project-1-overlay:hover, .project-2-overlay:hover, .project-3-overlay:hover{
+.project-overlay:hover {
   opacity: 1;
 }
 
-
-
-.project-1-overlay__button {
-  border-radius: 24px;
-  border: none;
-  padding: 15px;
-  background-color: rgb(4, 100, 20);
-  color: white;
-  cursor: pointer;
-  margin-top: 9px;
-}
-
-.project-2-overlay__button {
-  border-radius: 24px;
-  border: none;
-  padding: 15px;
-  background-color: rgb(32, 48, 189);
-  color: white;
-  cursor: pointer;
-  margin-top: 9px;
-}
-
-.project-3-overlay__button {
-  border-radius: 24px;
-  border: none;
-  padding: 15px;
-  background-color: rgb(207, 52, 28);
-  color: white;
-  cursor: pointer;
-  margin-top: 9px;
-}
-
-.project-1-overlay__description, .project-2-overlay__description, .project-3-overlay__description {
+.project-overlay__description {
   text-align: center;
   display: inline-block;
 }
 
+.project-overlay__button {
+  border-radius: 24px;
+  border: none;
+  padding: 15px;
+  color: white;
+  cursor: pointer;
+  margin-top: 9px;
+}
 
-.project-img-2 {
-  height: 200px;
-  width: 300px;
-  border-radius: 12px;
-  cursor: pointer;
+.starbucks-btn {
+  background-color: rgb(4, 100, 20);
 }
-.project-img-3 {
-  height: 200px;
-  width: 300px;
-  border-radius: 12px;
-  cursor: pointer;
+
+.cinema-btn {
+  background-color: rgb(32, 48, 189);
 }
+
+.clothing-btn {
+  background-color: rgb(207, 52, 28);
+}
+
 
 .footer {
   margin-top: 3.5em;
   height: 400px;
   width: 100%;
-  background-color: #7510F7;
+  background-color: #7510f7;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -327,7 +300,7 @@ section p {
   color: white;
   margin-top: 2em;
   display: inline-block;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   font-weight: 300;
 }
@@ -338,7 +311,7 @@ section p {
   gap: 20px;
 }
 
-.icon-email, .icon-linkedin, .icon-github{
+.icon {
   font-size: 1.18rem;
   color: white;
   border: 2px solid rgba(255, 255, 255, 0.3);
@@ -346,13 +319,12 @@ section p {
   cursor: pointer;
 }
 
-.fa-envelope, .fa-linkedin-in, .fa-github {
+.fa-icon {
   padding: 10px;
 }
 
-
-.icon-email:hover, .icon-linkedin:hover, .icon-github:hover {
-  color: #7510F7;
+.icon:hover {
+  color: #7510f7;
   background-color: white;
 }
 
@@ -361,8 +333,3 @@ section p {
   font-weight: 100;
   color: white;
 }
-
-
-
-
-
