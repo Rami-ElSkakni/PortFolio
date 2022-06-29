@@ -64,11 +64,15 @@ h1 {
   font-size: 2.4em;
 }
 
-main {
+.Introduction {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.main-p {
+.Introduction__p {
   text-align: center;
   display: block;
   font-weight: 200;
@@ -76,13 +80,13 @@ main {
   font-size: 1.15em;
 }
 
-.img-avatar {
+.Introduction__avatar {
   margin-top: 2em;
   width: 170px;
   display: inline-block;
 }
 
-.img-machine {
+.Introduction__heroMachine {
   width: 520px;
   margin-top: 3.7em;
 }
@@ -93,9 +97,10 @@ main {
   height: 500px;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 
-.text {
+.personal-info-container__header {
   text-align: center;
   margin-top: 100px;
 }
@@ -106,7 +111,7 @@ h2 {
   font-size: 1.3em;
 }
 
-.personal-info-container p {
+.personal-info-container__introduction {
   padding-top: 1.5em;
   color: white;
   width: 620px;
@@ -121,10 +126,14 @@ h2 {
   display: grid;
   grid-template-columns: repeat(1, 400px);
   justify-content: center;
-  margin-top: -8em;
+  /* margin-top: -8em; */
+  position: absolute;
+  /* left: 50%;
+  top: -3em; */
+  top: 25em;
 }
 
-.card-info-skills {
+.card-info__skills {
   background-color: white;
   width: 400px;
   height: 600px;
@@ -133,16 +142,15 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: c;
 }
 
-.card-info-skills img {
+ .card-info__skills__svg {
   height: 50px;
   width: 48px;
   padding-top: 3.125em;
 }
 
-.card-info-skills h2 {
+.card-info__skills h2 {
   text-align: center;
   display: inline-block;
   width: 250px;
@@ -151,20 +159,18 @@ h2 {
   margin-top: 2rem;
 }
 
-.card-info-skills .p-personal {
+.card-info__skills__personal {
   width: 310px;
   font-weight: 100;
   color: black;
   display: inline-block;
   text-align: center;
-}
-
-.p-personal {
   margin-top: 2em;
 }
 
-.card-info-skills h3,
-.card-info-skills h4 {
+
+.card-info__skills h3,
+.card-info__skills h4 {
   color: #7510f7;
   font-weight: 200;
   margin-top: 1.875em;
@@ -172,7 +178,7 @@ h2 {
   font-size: 1.3125rem;
 }
 
-.card-info-skills .p-skills {
+.card-info__skills__lang {
   width: 310px;
   color: black;
   margin-top: 1.875em;
@@ -181,19 +187,20 @@ h2 {
   font-weight: 300;
 }
 
-.card-info-skills ul {
+.card-info__skills__list {
   margin-top: 1.5em;
   text-align: center;
 }
 
-.card-info-skills li {
+.card-info__skills__list__item {
   list-style: none;
   font-weight: 200;
   margin-bottom: 0.5em;
 }
 
 .recent-work-container {
-  margin-top: 8.125em;
+  /* margin-top: 8.125em; */
+  margin-top: 37.125em;
   display: flex;
   flex-direction: column;
   justify-content: center;
