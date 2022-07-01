@@ -5,41 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="Styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="stylesheet" href="styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
-    <link
-      href="//db.onlinewebfonts.com/c/23c0fcab84d99da0de762de7e220a6e1?family=Europa"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="http://fonts.cdnfonts.com/css/eurostile-extended"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   </head>
   <body>
-    <nav>
-      <img src="./images/mf-logo.svg" alt="" class="brand-img" />
-
-      <div class="nav-right">
-        <span class="nav-text">Mentorship</span>
-        <button class="nav-button">Say Hello</button>
-      </div>
+    <nav class="navbar">
+      <img src="./images/mf-logo.svg" alt="main logo" class="navbar__logo" />
+      <span class="navbar__text">Mentorship</span>
+      <button class="navbar__button">Say Hello</button>
     </nav>
-    <main class="Introduction">
-      <h1>Front-end Developer</h1>
-      <p class="Introduction__p">
+    <main class="introduction">
+      <h1 class="introduction__header">Front-end Developer</h1>
+      <p class="introduction__p">
         I design and code beautifully simple things, and I love what I do
       </p>
-      <img src="./images/mf-avatar.svg" alt="Graphic-profile-pic" class="Introduction__avatar" />
-      <img src="./images/hero.svg" alt="Coding process" class="Introduction_heroMachine" />
+      <img src="./images/mf-avatar.svg" alt="Graphic-profile-pic" class="introduction__avatar" />
+      <img src="./images/hero.svg" alt="Coding process" class="introduction__heroMachine" />
     </main>
     <section class="personal-info-container">
         <h2 class="personal-info-container__header">Hi, I'm Rami. Nice to meet you</h2>
@@ -50,20 +32,19 @@
           and allowing me to sharpen my skills. After it, I would like to graduate from Computer
           Science and start my career.
         </p>
-
         <section class="card-info">
           <div class="card-info__skills">
-              <img src="./images/skills.svg" alt="skills image" class="card-info__skills__svg">
-              <h2>Front-end Developer</h2>
-              <p class = "card-info__skills__personal">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
-              <h3>Languages I speak:</h3>
-              <p class = "card-info__skills__lang">HTML, CSS, JavaScript</p>
-              <h4>Dev Tools:</h4>
-              <ul class="card-info__skills__list">
-                <li class="card-info__skills__list__item">Git</li>
-                <li class="card-info__skills__list__item">GitHub</li>
-                <li class="card-info__skills__list__item">Bootstrap</li>
-              </ul>
+            <img src="./images/skills.svg" alt="skills image" class="card-info__skills__svg">
+            <h2>Front-end Developer</h2>
+            <p class = "card-info__skills__personal">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+            <h3 class = "card-info__skills__header">Languages I speak:</h3>
+            <p class = "card-info__skills__lang">HTML, CSS, JavaScript</p>
+            <h4 class="card-info__skills__header">Dev Tools:</h4>
+            <ul class="card-info__skills__list">
+              <li class="card-info__skills__list__item">Git</li>
+              <li class="card-info__skills__list__item">GitHub</li>
+              <li class="card-info__skills__list__item">Bootstrap</li>
+            </ul>
           </div>
         </section>
     </section>
@@ -71,32 +52,34 @@
     <section class = "recent-work-container">
       <h2 class="recent-work-container__h2">My Recent Work</h2>
       <p class="recent-work-container__p">Here are a few design projects that I have worked on</p>
-      <div class="project-grid">
-          <div class="project-grid__item">
-            <img src="./images/starbucks.jpg" alt="starbucks-cup-image" class="project-grid__img">
+      <div class="project-flex">
+          <div class="project-flex__item">
+            <img src="./images/starbucks.jpg" alt="starbucks-cup-image" class="project-flex__img">
             <div class="project-overlay">
               <span class="project-overlay__description">This project was a clone of Starbucks' main page </span>
               <a href="https://github.com/Rami-ElSkakni/Starbucks-FrontEnd-Clone"><button class="project-overlay__button starbucks-btn">Visit Website</button></a>
            </div>
+
           </div>
-          <div class="project-grid__item">
-            <img src="./images/cinema.jpg" alt="cinema" class="project-grid__img">
+          <div class="project-flex__item">
+            <img src="./images/cinema.jpg" alt="cinema" class="project-flex__img">
             <div class="project-overlay">
               <span class="project-overlay__description">View and sort movies that you like based on a database</span>
               <a href="https://github.com/Rami-ElSkakni/DataBase-Frontend-Project"><button class="project-overlay__button cinema-btn">Visit Website</button></a>
            </div>
           </div>
-          <div class="project-grid__item">
-            <img src="./images/clothing.jpeg" alt="clothes" class="project-grid__img">
+
+          <div class="project-flex__item">
+            <img src="./images/clothing.jpeg" alt="clothes" class="project-flex__img">
             <div class="project-overlay">
               <span class="project-overlay__description">A website that displays all kinds of clothing-wear</span>
-             <a href="https://github.com/Rami-ElSkakni/Clothing-Front-End-Website"><button class="project-overlay__button clothing-btn">Visit Website</button></a> 
+              <a href="https://github.com/Rami-ElSkakni/Clothing-Front-End-Website"><button class="project-overlay__button clothing-btn">Visit Website</button></a> 
            </div>
           </div>   
-        </section>
+    </section>
 
     <footer class="footer">
-        <img class="footer__img" src="./images/mf-logo-white.svg" alt="">
+        <img class="footer__img" src="./images/mf-logo-white.svg" alt="footer logo">
         <div class="footer__description">Living, learning, & leveling up one day at a time.</div>
         <div class="icons-container">
           <span class="icon"><i class="fa-solid fa-envelope fa-icon"></i></span>
