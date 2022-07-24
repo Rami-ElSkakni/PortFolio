@@ -12,6 +12,16 @@
   --padding-spacer: 1rem;
   --font-size: 1rem;
 }
+
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -280,6 +290,87 @@
 
 .project-overlay__button--clothing {
   background-color: var(--clothing-red-color);
+}
+
+.testimonials__carousel {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: calc(var(--margin-spacer) * 3);
+  font-size: calc(var(--font-size) * 1);
+  display: none;
+  transition-duration: 2s;
+}
+
+.testimonials__header {
+  margin-top: calc(var(--margin-spacer) * 3);
+  text-align: center;
+}
+
+.testimonials__subheader {
+  font-weight: 300;
+  margin-top: calc(var(--margin-spacer) * 1);
+  margin-bottom: calc(var(--margin-spacer) * 2);
+  font-size: calc(var(--font-size) * 1);
+  text-align: center;
+}
+
+.testimonials__carousel__picture {
+  height: 80px;
+  width: 80px;
+  margin-bottom: calc(var(--margin-spacer) * 2);
+  border-radius: 50%;
+}
+
+.testimonials__carousel__description {
+  display: flex;
+  justify-content: center;
+  max-width: 30em;
+  text-align: center;
+  font-weight: 300;
+  font-size: calc(var(--font-size) * 1.25);
+  margin-left: calc(var(--margin-spacer) * 3);
+  margin-right: calc(var(--margin-spacer) * 3);
+  line-height: 1.5em;
+}
+
+.testimonials__carousel__name {
+  margin-top: calc(var(--margin-spacer) * 2);
+}
+
+.testimonials__carousel__signature {
+  font-weight: 300;
+  margin-top: calc(var(--margin-spacer) * 0.5);
+  font-size: calc(var(--font-size) * 0.75);
+}
+
+.btn--container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn--container__item {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 1px solid var(--border-shade);
+  margin-top: calc(var(--margin-spacer) * 1);
+  background-color: var(--white-color);
+  margin-right: calc(var(--margin-spacer) * 1);
+}
+
+.testimonials__carousel--selected {
+  -webkit-animation: fadeIn 500ms;
+  animation: fadeIn 500ms;
+  display: flex;
+}
+
+.btn--container__item--selected {
+  background-color: var(--main-color);
+  -webkit-animation: fadeIn 500ms;
+  animation: fadeIn 500ms;
 }
 
 .footer {
