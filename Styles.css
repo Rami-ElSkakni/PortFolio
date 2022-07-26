@@ -330,8 +330,7 @@
   text-align: center;
   font-weight: 300;
   font-size: calc(var(--font-size) * 1.25);
-  margin-left: calc(var(--margin-spacer) * 3);
-  margin-right: calc(var(--margin-spacer) * 3);
+  margin: 0 calc(var(--margin-spacer) * 3);
   line-height: 1.5em;
 }
 
